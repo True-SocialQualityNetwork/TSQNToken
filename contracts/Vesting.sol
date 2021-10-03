@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.6;
+pragma solidity 0.8.7;
 /*
 Original work taken from https://github.com/JoinColony/colonyToken/blob/master/contracts/Vesting.sol
 and https://github.com/tapmydata/tap-protocol/blob/main/contracts/VestingVault.sol
@@ -35,6 +35,8 @@ contract Vesting is Ownable {
 		token = _token;
 	}
 
+	//cliff can be 0
+	//vesting duration should be at least 1
 	function addTokenGrant(
 		address _recipient,
 		uint256 _amount,

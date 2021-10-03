@@ -2,9 +2,6 @@ const hre = require("hardhat")
 require("@nomiclabs/hardhat-web3")
 const fs = require("fs-extra")
 
-const ERC20_ABI = require("../utils/erc20_abi.js")
-const VESTING_ABI = require("../utils/vesting_abi.js")
-
 function sleep(ms) {
 	return new Promise((resolve) => {
 		setTimeout(resolve, ms)
@@ -34,7 +31,7 @@ async function main() {
 		"ETH"
 	)
 
-	//bsc mainnet: 0xC9D3fBbc35333abC7D078049984C883bAF1AC671
+	//bsc mainnet: ??
 	//bsc testnet: 0x65E9B9BB12479172B088238c236aA4f8e364B1CB
 	const tokenAddress = "0x65E9B9BB12479172B088238c236aA4f8e364B1CB"
 	let deployed = await Vesting.deploy(tokenAddress)
