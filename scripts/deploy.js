@@ -15,7 +15,7 @@ async function main() {
 
 	// We get the contract to deploy
 	const NFTContract = await hre.ethers.getContractFactory("Coinzix")
-	console.log("Deploying Coinzix Contract...")
+	console.log("Deploying TrueSQN Token Contract...")
 
 	let network = process.env.NETWORK ? process.env.NETWORK : "rinkeby"
 

@@ -1,4 +1,4 @@
-# Coinzix Token
+# TrueSQN Token
 
 ### BSC Testnet
 

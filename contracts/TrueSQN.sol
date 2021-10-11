@@ -5,9 +5,9 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 
-//Coinzix
-contract Coinzix is Context, ERC20Permit, ERC20Burnable, Ownable {
-	constructor() ERC20Permit("CZIX") ERC20("Coinzix", "CZIX") {
+//TSQNTOKEN
+contract TrueSQN is Context, ERC20Permit, ERC20Burnable, Ownable {
+	constructor() ERC20Permit("TSQN") ERC20("TrueSQN", "TSQN") {
 		_mint(msg.sender, 200000000 * 10**18);
 	}
 
