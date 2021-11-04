@@ -49,13 +49,27 @@ module.exports = {
 		bsc_test: {
 			url: process.env.BSC_RPC_TEST,
 			network_id: 97,
+			gasPrice: 20000000000, //20 gwei
 			accounts: [process.env.PRIVATE_KEY],
 		},
 		bsc: {
 			url: process.env.BSC_RPC,
 			network_id: 56,
+			gasPrice: 20000000000, //20 gwei
 			accounts: [process.env.PRIVATE_KEY],
 		},
+		matictest: {
+			url: "https://rpc-mumbai.maticvigil.com",
+			accounts,
+			network_id: 80001
+			accounts: [process.env.PRIVATE_KEY],
+		},
+		matic:{
+			url: "https://polygon-rpc.com",
+			accounts,
+			network_id: 137
+			accounts: [process.env.PRIVATE_KEY],
+		}
 	},
 
 	gasReporter: {
